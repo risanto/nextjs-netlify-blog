@@ -9,19 +9,22 @@ export default function Index({ posts }) {
                 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
             </Head>
             <Layout>
-                HOME
+                <ul>
+                    {posts.map(post => {
+                        return <li>{post.data.title}</li>
+                    })}
+                </ul>
             </Layout>
         </>
     )
 }
 
 export const getStaticProps = async () => {
-    console.log(fetchPostContent())
-    console.log('getStaticProps CALLED')
+    const posts = fetchPostContent()
 
     return {
         props: {
-
+            posts
         }
     }
 }
