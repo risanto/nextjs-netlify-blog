@@ -10,8 +10,8 @@ export default function Index({ posts }) {
             </Head>
             <Layout>
                 <ul>
-                    {posts.map(post => {
-                        return <li>{post.data.title}</li>
+                    {posts.map((post, idx) => {
+                        return <li key={idx}>{post.data.title}</li>
                     })}
                 </ul>
             </Layout>
