@@ -1,7 +1,6 @@
-import React from 'react'
 import Link from 'next/link'
 
-const Nav = () => {
+export default function Nav() {
     return (
         <nav>
             <ul>
@@ -19,5 +18,3 @@ const Nav = () => {
         </nav>
     )
 }
-
-export default Nav

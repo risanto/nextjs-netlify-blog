@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Layout from '../components/Layout'
+import PostItem from '../components/PostItem'
 import { fetchPostContent } from '../lib/posts'
 
 export default function Index({ posts }) {
@@ -11,7 +12,9 @@ export default function Index({ posts }) {
             <Layout>
                 <ul>
                     {posts.map((post, idx) => {
-                        return <li key={idx}>{post.data.title}</li>
+                        return <li key={idx}>
+                            <PostItem post={post}/>
+                        </li>
                     })}
                 </ul>
             </Layout>
@@ -19,7 +22,7 @@ export default function Index({ posts }) {
     )
 }
 
-export const getStaticProps = async () => {
+export async function getStaticProps () {
     const posts = fetchPostContent()
 
     return {

@@ -28,6 +28,9 @@ export function fetchPostContent() {
                 }
             })
 
+            // Create slug based on file name without .md
+            parsedContent.data.slug = fileName.slice(0, fileName.length-3)
+
             return parsedContent
         })
 

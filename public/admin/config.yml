@@ -6,9 +6,9 @@ publish_mode: editorial_workflow
 media_folder: public/img
 public_folder: img
 collections:
-  - name: "pages"
-    label: "Pages"
-    folder: "content"
+  - name: "posts"
+    label: "Posts"
+    folder: "src/pages/posts"
     extension: "md"
     format: "frontmatter"
     create: true
