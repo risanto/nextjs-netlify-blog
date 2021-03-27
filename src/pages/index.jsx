@@ -10,6 +10,9 @@ export default function Index({ posts }) {
                 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
             </Head>
             <Layout>
+                <header>
+                    
+                </header>
                 <ul>
                     {posts.map((post, idx) => {
                         return <li key={idx}>

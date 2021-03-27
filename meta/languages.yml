@@ -1,0 +1,5 @@
+languages:
+  - slug: en
+    name: English
+  - slug: id
+    name: Indonesian

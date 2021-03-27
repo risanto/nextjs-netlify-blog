@@ -5,7 +5,75 @@ backend:
 publish_mode: editorial_workflow
 media_folder: public/img
 public_folder: img
+
 collections:
+  - name: "meta"
+    label: "Meta"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "authors"
+        label: "Authors"
+        file: "meta/authors.yml"
+        description: "Author descriptions"
+        fields:
+          - name: authors
+            label: Authors
+            label_singular: "Author"
+            widget: list
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                hint: "The part of a URL identifies the author"
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                hint: "First and last or nickname"
+              - label: "Introduction"
+                name: "introduction"
+                widget: "text"
+
+      - name: "languages"
+        label: "Languages"
+        file: "meta/languages.yml"
+        description: "Post languages"
+        fields:
+          - name: languages
+            label: Languages
+            label_singular: "Language"
+            widget: list
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                hint: "The part of a URL identifies the language"
+              - label: "Display Name"
+                name: "name"
+                widget: "string"
+                hint: "Language name for displaying on the site"
+
+
+      - name: "tags"
+        label: "Tags"
+        file: "meta/tags.yml"
+        description: "List of tags"
+        fields:
+          - name: tags
+            label: Tags
+            label_singular: "Tag"
+            widget: list
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                hint: "The part of a URL identifies the tag"
+              - label: "Display Name"
+                name: "name"
+                widget: "string"
+                hint: "Tag name for displaying on the site"
+
   - name: "posts"
     label: "Posts"
     folder: "src/pages/posts"
