@@ -9,6 +9,8 @@ thumbnail: https://miro.medium.com/max/875/1*HXKAKuaydw8sxLJRh3sp7g.png
 ---
 Otak yang macet dan program yang *error* adalah makanan sehari-hari ketika baru belajar *programming.* Tiga konsep di bawah ini mungkin bisa membantumu mengatasi permasalahan ini.
 
+...
+
 ## **Belajar tidak harus selalu fokus**
 
 Mungkin kamu familiar dengan **mode** **fokus** ketika belajar**,** dimana di mode ini kamu memaksimalkan perhatianmu pada satu hal saja dan meminimalisir distraksi.
@@ -21,11 +23,9 @@ Hal ini bagus jika kamu sudah familiar dengan permasalahan yang ada, tapi bagaim
 
 Di sini kamu perlu beralih ke mode berpikir lain, yaitu **mode tersebar** (atau *diffuse mode*), dimana kamu membiarkan pikiranmu tersebar ke berbagai arah, menghubungkan ide satu dengan ide lainnya.
 
-![](https://miro.medium.com/max/60/1*ESPWVVQphbeealZvQ_bdFw.png?q=20)
+![Mode fokus dan tersebar](https://miro.medium.com/max/1280/1*ESPWVVQphbeealZvQ_bdFw.png "Mode fokus dan tersebar")
 
-![](https://miro.medium.com/max/1280/1*ESPWVVQphbeealZvQ_bdFw.png)
-
-Mode fokus dan tersebar (gambar dari [instructables.com](https://www.instructables.com/Learning-How-to-Learn/))
+###### Mode fokus dan tersebar (gambar dari [instructables.com](https://www.instructables.com/Learning-How-to-Learn/))
 
 Jika otak diibaratkan seperti mesin *pinball*, di mode fokus jarak antara *bumper* yang ada rapat-rapat sehingga pikiranmu terpusat di satu area saja.
 
@@ -53,11 +53,9 @@ Demonstrasi atau panduan yang kamu terima dan ikuti ini memberikan ilusi kalau k
 
 Yang perlu kamu lakukan agar materi-materi yang kamu pelajari ini awet adalah dengan **belajar secara aktif**, yang terjadi ketika kamu menghadapi tantangan tanpa dipandu proses pemecahan permasalahannya.
 
-![](https://miro.medium.com/max/60/1*AAz2Tc2IC5nmjH_NvfCZ2g.jpeg?q=20)
+![Olahraga otak.](https://miro.medium.com/max/938/1*AAz2Tc2IC5nmjH_NvfCZ2g.jpeg "Olahraga otak")
 
-![](https://miro.medium.com/max/938/1*AAz2Tc2IC5nmjH_NvfCZ2g.jpeg)
-
-Bukan hanya otot, otakmu juga perlu olahraga (gambar dari [the-scientist.com](https://www.the-scientist.com/features/this-is-your-brain-on-exercise-64934))
+###### Bukan hanya otot, otakmu juga perlu olahraga (gambar dari [the-scientist.com](https://www.the-scientist.com/features/this-is-your-brain-on-exercise-64934))
 
 Salah satu cara belajar aktif yang cukup efektif adalah *active recall,* dimana kamu memaksa otakmu untuk berpikir dan memanggil kembali materi-materi yang telah kamu pelajari sebelumnya.
 
@@ -96,11 +94,9 @@ Pernah *gak* kamu langsung menemukan jawaban ketika sedang menjelaskan suatu p
 
 Nah, ini salah satu contoh betapa bergunanya pertanyaan dan penjelasan yang mendetail untuk membantumu memecahkan permasalahanmu.
 
-![](https://miro.medium.com/max/60/1*_M45vuDJh8DsoH0jEHmgRg.jpeg?q=20)
+![Rubberduck debugging.](https://miro.medium.com/max/2500/1*_M45vuDJh8DsoH0jEHmgRg.jpeg "Rubberduck debugging")
 
-![](https://miro.medium.com/max/2500/1*_M45vuDJh8DsoH0jEHmgRg.jpeg)
-
-Bebek-bebek ini siap mendengarkan curhatan *programming*-mu (gambar dari [gitduck.com](https://gitduck.com/blog/improve-how-to-code-with-rubber-duck-debugging/))
+###### Bebek-bebek ini siap mendengarkan curhatan *programming*-mu (gambar dari [gitduck.com](https://gitduck.com/blog/improve-how-to-code-with-rubber-duck-debugging/))
 
 Lalu bagaimana jika tidak ada orang yang bisa kamu tanya?
 
@@ -119,7 +115,7 @@ Dari tiga konsep yang telah dijelaskan di atas, berikut kesimpulan yang bisa kam
 2. Menonton video atau mengikuti instruksi saja tidak cukup. Kamu perlu **belajar secara aktif dan mengetes pemahamanmu** serta menggali kembali materi yang telah kamu pelajari sebelumnya.
 3. Ketika ada masalah dan kamu ingin bertanya, **jelaskan programmu sedetail mungkin dalam bahasa yang bebek mainan pun bisa mengerti**. Seringkali, orang-orang mendapatkan solusi dari proses penjelasan dan formulasi pertanyaan ini.
 
-*Jangan lupa untuk memberikan* **claps** *sebanyak 50 kali 👏 👏 dan* **[follow profile *saya*](https://medium.com/@risantm)** *jika ketiga konsep ini membantu perjalanan* ngoding*\-mu. Tunggu artikel-artikel selanjutnya ya~*
+*...*
 
 **Referensi**
 
