@@ -1,7 +1,7 @@
 import Head from "next/head"
 import Layout from '../components/Layout'
 import PostItem from '../components/PostItem'
-import { fetchPostContent } from '../lib/posts'
+import { fetchAllPostContent } from '../lib/posts'
 
 export default function Index({ posts }) {
     return (
@@ -23,7 +23,7 @@ export default function Index({ posts }) {
 }
 
 export async function getStaticProps () {
-    const posts = fetchPostContent()
+    const posts = fetchAllPostContent()
 
     return {
         props: {

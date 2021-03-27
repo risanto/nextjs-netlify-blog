@@ -7,8 +7,8 @@ const postsDirectory = path.join(process.cwd(), "src/pages/posts")
 
 let postCache = []
 
-export function fetchPostContent() {
-    // if (postCache.length) return postCache
+export function fetchAllPostContent() {
+    if (postCache.length) return postCache
 
     // Get file names under /posts
     const fileNames = fs.readdirSync(postsDirectory)
@@ -29,7 +29,7 @@ export function fetchPostContent() {
             })
 
             // Create slug based on file name without .md
-            parsedContent.data.slug = fileName.slice(0, fileName.length-3)
+            parsedContent.data.slug = fileName.slice(0, fileName.length - 3)
 
             return parsedContent
         })
@@ -40,4 +40,36 @@ export function fetchPostContent() {
     })
 
     return allPostsData
+}
+
+export function getAllPostIds() {
+    let fileNames = fs.readdirSync(postsDirectory)
+
+    fileNames = fileNames.filter(fileName => fileName.includes('md'))
+
+    return fileNames.map((fileName) => {
+        return {
+            params: {
+                slug: fileName.replace(/\.md$/, '')
+            }
+        }
+    })
+}
+
+export function getPostData(slug) {
+    const fullPath = path.join(postsDirectory, `${slug}.md`)
+    const fileContents = fs.readFileSync(fullPath, 'utf-8')
+
+    // Use gray-matter to parse the post metadata section
+    const matterResult = matter(fileContents, {
+        engines: {
+            yaml: (s) => yaml.load(s, { schema: yaml.JSON_SCHEMA })
+        }
+    })
+
+    return {
+        slug,
+        ...matterResult.data,
+        content: matterResult.content
+    }
 }
