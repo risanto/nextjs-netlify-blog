@@ -117,10 +117,8 @@ collections:
           widget: relation
           collection: "meta"
           file: "tags"
-          searchFields:
-            - "tags.*.name"
-          displayFields:
-            - "tags.*.name"
+          searchFields: ["tags.*.name"]
+          displayFields: ["tags.*.name"]
           valueField: "tags.*.slug"
 
       - label: Languages
@@ -133,10 +131,8 @@ collections:
           widget: relation
           collection: "meta"
           file: "languages"
-          searchFields:
-            - "languages.*.name"
-          displayFields:
-            - "languages.*.name"
+          searchFields: ["languages.*.name"]
+          displayFields: ["languages.*.name"]
           valueField: "languages.*.slug"
 
       - label: "Featured Image"
