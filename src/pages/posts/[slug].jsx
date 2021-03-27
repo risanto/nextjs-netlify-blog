@@ -3,7 +3,11 @@ import Layout from '../../components/Layout'
 
 export default function Post(props) {
     const { postData } = props
-    console.log(postData)
+
+    function formatImgSrc(thumbnail) {
+        return thumbnail.includes('http')
+            ? thumbnail : `/${thumbnail}`
+    }
 
     return (
         <Layout>
@@ -11,7 +15,9 @@ export default function Post(props) {
                 <header>
                     <h1>{postData.title}</h1>
                     <p>{postData.date}</p>
-                    <img src={`/${postData.thumbnail}`}/>
+                    <img
+                        src={formatImgSrc(postData.thumbnail)}
+                    />
                 </header>
                 <div dangerouslySetInnerHTML={
                     { __html: postData.contentHtml }
