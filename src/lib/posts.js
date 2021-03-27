@@ -2,6 +2,8 @@ import fs from 'fs'
 import path from 'path'
 import * as matter from 'gray-matter'
 import yaml from 'js-yaml'
+import remark from 'remark'
+import html from 'remark-html'
 
 const postsDirectory = path.join(process.cwd(), "src/pages/posts")
 
@@ -56,7 +58,7 @@ export function getAllPostIds() {
     })
 }
 
-export function getPostData(slug) {
+export async function getPostData(slug) {
     const fullPath = path.join(postsDirectory, `${slug}.md`)
     const fileContents = fs.readFileSync(fullPath, 'utf-8')
 
@@ -67,9 +69,16 @@ export function getPostData(slug) {
         }
     })
 
+    // Use remark to convert markdown into HTML string
+    const processedContent = await remark()
+        .use(html)
+        .process(matterResult.content)
+
+    const contentHtml = processedContent.toString()
+
     return {
         slug,
         ...matterResult.data,
-        content: matterResult.content
+        contentHtml
     }
 }
