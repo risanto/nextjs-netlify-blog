@@ -112,32 +112,32 @@ collections:
         widget: list
         summary: "{{fields.tag}}"
         field:
-          - label: Tag
-            name: tag
-            widget: relation
-            collection: "meta"
-            file: "tags"
-            searchFields:
-              - "tags.*.name"
-            displayFields:
-              - "tags.*.name"
-            valueField: "tags.*.slug"
+          label: Tag
+          name: tag
+          widget: relation
+          collection: "meta"
+          file: "tags"
+          searchFields:
+            - "tags.*.name"
+          displayFields:
+            - "tags.*.name"
+          valueField: "tags.*.slug"
 
       - label: Languages
         label_singular: "Language"
         name: "languages"
         widget: list
         field:
-          - label: Language
-            name: language
-            widget: relation
-            collection: "meta"
-            file: "languages"
-            searchFields:
-              - "languages.*.name"
-            displayFields:
-              - "languages.*.name"
-            valueField: "languages.*.slug"
+          label: Language
+          name: language
+          widget: relation
+          collection: "meta"
+          file: "languages"
+          searchFields:
+            - "languages.*.name"
+          displayFields:
+            - "languages.*.name"
+          valueField: "languages.*.slug"
 
       - label: "Featured Image"
         name: "thumbnail"
