@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cms-content > p {
+    @apply mt-6 bg-red-500;
+}

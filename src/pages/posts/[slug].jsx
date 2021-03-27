@@ -12,16 +12,21 @@ export default function Post(props) {
     return (
         <Layout>
             <article>
-                <header>
+                <header
+                    className={"p-2 bg-red-500"}
+                >
                     <h1>{postData.title}</h1>
                     <p>{postData.date}</p>
                     <img
                         src={formatImgSrc(postData.thumbnail)}
                     />
                 </header>
-                <div dangerouslySetInnerHTML={
-                    { __html: postData.contentHtml }
-                }></div>
+                <div
+                    className={"cms-content"}
+                    dangerouslySetInnerHTML={
+                        { __html: postData.contentHtml }
+                    }>
+                </div>
             </article>
         </Layout>
     )

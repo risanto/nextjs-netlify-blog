@@ -11,7 +11,7 @@ export default function Index({ posts }) {
             </Head>
             <Layout>
                 <header>
-                    
+
                 </header>
                 <ul>
                     {posts.map((post, idx) => {
